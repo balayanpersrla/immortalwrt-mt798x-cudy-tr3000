@@ -31,9 +31,6 @@ git clone https://github.com/Openwrt-Passwall/openwrt-passwall2 package/passwall
 # Modify default IP
 sed -i 's/192.168.6.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 
-set ubi to 122M
-sed -i 's/reg = <0x5c0000 0x7000000>;/reg = <0x5c0000 0x7a40000>;/' target/linux/mediatek/dts/mt7981b-cudy-tr3000-v1-ubootmod.dts
-
 # defconfig
 # cp -f ../.config .config
 # cp -f defconfig/mt7981-ax3000.config .config
