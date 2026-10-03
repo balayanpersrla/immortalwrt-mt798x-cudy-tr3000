@@ -8,14 +8,6 @@
 # ./scripts/feeds update -a
 # ./scripts/feeds install -a
 
-# nikki
-echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
-# 更新并安装源
-./scripts/feeds update -a
-./scripts/feeds install -a
-# 编译
-make package/luci-app-nikki/compile
-
 # theme
 rm -rf feeds/luci/themes/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
